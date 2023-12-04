@@ -1,0 +1,18 @@
+package com.cart.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cart.Model.Users;
+import com.cart.Repo.UserRepo;
+
+public class UserServiceImpl implements UsersService{
+	
+	@Autowired
+	private UserRepo userRepo;
+
+	@Override
+	public Users registerUser(Users users) {
+		return userRepo.save(users);
+	}
+
+}

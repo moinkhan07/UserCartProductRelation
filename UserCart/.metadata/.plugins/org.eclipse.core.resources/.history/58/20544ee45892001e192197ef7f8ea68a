@@ -1,0 +1,22 @@
+package com.cart.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cart.Model.Product;
+import com.cart.Model.Users;
+import com.cart.Repo.CartItemRepo;
+
+@Service
+public class ShoppingCartServiceImpl implements ShoppingCartService{
+	
+	 @Autowired
+	 private CartItemRepo cartItemRepo;
+
+	@Override
+	public void addProductToCart(Users users, Product product, Integer quantity) {
+		
+		
+	}
+
+}

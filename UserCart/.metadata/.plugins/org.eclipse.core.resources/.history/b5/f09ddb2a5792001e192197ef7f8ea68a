@@ -1,0 +1,17 @@
+package com.cart.Model;
+
+import java.util.ArrayList;
+
+public class Product {
+	
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
+
+    private String name;
+    
+    private String price;
+
+    @OneToMany(mappedBy = "product")
+    private List<CartItem> cartItems = new ArrayList<>();
+}

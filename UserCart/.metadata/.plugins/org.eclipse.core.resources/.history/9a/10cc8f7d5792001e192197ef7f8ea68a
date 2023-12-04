@@ -1,0 +1,9 @@
+package com.cart.Repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cart.Model.Product;
+
+public interface ProductRepo extends JpaRepository<Product, Integer>{
+
+}
